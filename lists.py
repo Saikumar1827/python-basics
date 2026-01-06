@@ -2,6 +2,7 @@ server_1 = "172.10.33.22"
 server_2 = "172.10.33.23"
 
 servers = ["172.10.33.22", "172.10.33.23", True, 123, 1234.56, 1234.567]
+print(servers)
 # print(type(servers), servers, server_1, server_2)
 
 # pythone is zero indexed based
@@ -11,6 +12,12 @@ server_1 = servers[0]
 # Slicing (start_index:end_index +1 step_size), end index in python is not inclusive
 # step_size: 1 (default)
 simple_slice = servers[1:6:2]  #[1, 1+2. 3+2, 5+2]
+simple_slice = servers[1:]
+print(simple_slice)
+simple_slice = servers[:5]
+print(simple_slice)
+simple_slice = servers[:]
+print(simple_slice)
 # print(simple_slice)
 
 # Negative indexing
