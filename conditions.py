@@ -1,4 +1,4 @@
-environment = "PROD"
+environment = input("Enter your envionment: ")
 change_ticket = False
 
 environment = environment.casefold()
